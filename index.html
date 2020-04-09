@@ -5,18 +5,31 @@
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
   <style>
+    /* ROOT STYLES */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
     /* GLOBAL STYLES */
-    li a.social-link {
+    a {
       color: #f00;
-      /* color: rgba(255, 0, 0, 0.2); */
+    }
+    h1 {
+      font-size: 7vw;
+      margin-top: 0;
     }
     h2 {
-      font-size: 2em;
+      font-size: 30px;
+    }
+    /* HERO STYLES */
+    .full-hero {
+      background-color: #c7dbfc;
+      width: 100vw;
+      height: 50vh;
     }
     /* SOCIAL LINKS */
     .social-link {
       color: #00f;
-      /* color: rgba(0, 0, 255, 0.2) */
     }
     /* BIO BOXES */
     .bio-wrapper {
@@ -24,12 +37,14 @@
     }
     .bio-box {
       border: 2px solid #0002;
+      font-size: 1em;
       width: 50%;
+    }
+    .bio-box h3 {
       font-size: 1.5em;
-      padding: 0.5em;
     }
     .bio-copy {
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .bio-copy a {
       color: #0f0;
@@ -38,18 +53,22 @@
 </head>
 
 <body>
-  <h1>I'm an h1</h1>
-  <ul>
-    <li>
-      <a class="social-link" href="https://example.com/">Link</a>
-    </li>
-    <li>
-      <a class="social-link" href="https://example.com/">Link</a>
-    </li>
-    <li>
-      <a class="social-link" href="https://example.com/">Link</a>
-    </li>
-  </ul>
+
+  <div class="full-hero hero-home">
+    <h1>I'm an h1</h1>
+    <ul>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/">Link</a>
+      </li>
+    </ul>
+  </div>
+
   <h2>I'm an h2</h2>
 
   <div class="bio-wrapper">
