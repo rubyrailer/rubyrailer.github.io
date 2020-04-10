@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <style>
     /* ROOT STYLES */
-    html, body {
+    body {
       margin: 0;
       padding: 0;
     }
@@ -15,7 +15,7 @@
       color: #f00;
     }
     h1 {
-      font-size: 7vw;
+      font-size: 5vw;
       margin-top: 0;
     }
     h2 {
@@ -30,6 +30,10 @@
     /* SOCIAL LINKS */
     .social-link {
       color: #00f;
+      display: inline-block;
+      height: 36px;
+      width: 36px;
+      background: #ddd;
     }
     /* BIO BOXES */
     .bio-wrapper {
@@ -41,13 +45,26 @@
       width: 50%;
     }
     .bio-box h3 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
     .bio-copy {
         font-size: 1em;
     }
     .bio-copy a {
       color: #0f0;
+    }
+
+    .test-box {
+      display: inline;
+      background: #ddd;
+      width: 200px;
+    }
+    .test-box-nosizing {
+      border: 10px solid #f00;
+      padding: 40px;
+    }
+    .test-box-sizing {
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -70,6 +87,15 @@
   </div>
 
   <h2>I'm an h2</h2>
+
+  <div class="test-box">200px wide
+  </div>
+
+  <div class="test-box test-box-nosizing">200px wide + border + padding = 300px
+  </div>
+
+  <div class="test-box test-box-nosizing test-box-sizing">200px wide + border + padding + box-sizing = 300px
+  </div>
 
   <div class="bio-wrapper">
     <div class="bio-box">
