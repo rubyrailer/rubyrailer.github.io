@@ -48,6 +48,11 @@ a img {
 /* END RESET*/
 
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
+
 body {
   font-family: helvetica, arial, sans;
 }
@@ -74,6 +79,14 @@ h2 {
 }
 
 /* HEADER STYLES */
+.header {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
 .header-nav {
   float: right;
   padding: 5.5vh 60px 0 0;
@@ -85,12 +98,12 @@ h2 {
 }
 
 .header-nav > li ~ li {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
 
 .header-nav a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
@@ -107,12 +120,29 @@ h2 {
 }
 
 .header-nav > li:first-child a:hover {
-  color: #00f;
+  color: #fff;
+}
+
+.header-logo {
+  background: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  left: -30px;
+  text-align: center;
+  width: 10vh;
+
+}
+
+.header-logo img {
+  width: 4.3vh;
 }
 
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
+  background: #ed6e2f;
 }
 
 /* HERO STYLES */
