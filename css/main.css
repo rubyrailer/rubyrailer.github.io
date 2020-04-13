@@ -215,6 +215,10 @@ color: #aaa;
   margin: 0 1em;
 }
 
+.footer-nav.social-list {
+  margin: 2em 1em 0;
+}
+
 /* BIO BOXES */
 .bio-wrapper {
   font-size: 24px;
