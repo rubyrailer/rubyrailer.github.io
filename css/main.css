@@ -93,6 +93,11 @@ h2 {
   font-size: 2em;
 }
 
+h4 {
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /* HEADER STYLES */
 .header {
   background: #000;
@@ -218,6 +223,26 @@ color: #aaa;
 
 .col-3 .col-aside {
   flex: 0 1 20em;
+}
+
+.col-2 {
+  display: flex;
+}
+
+.col-2 .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+
+.col-2 .col-content {
+  flex: 1;
+}
+
+/* PAGE STYLES */
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
 }
 
 /* HERO STYLES */
