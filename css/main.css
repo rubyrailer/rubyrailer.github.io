@@ -361,6 +361,20 @@ color: #aaa;
   text-align: center;
 }
 
+.home-section h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.home-section .post-header {
+  text-align: center;
+}
+
+.home-section .blog-posts {
+  width: 75%;
+  margin: auto;
+}
+
 .home-callout {
   align-items: center;
   display: flex;
